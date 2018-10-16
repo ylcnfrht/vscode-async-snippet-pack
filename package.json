@@ -1,0 +1,24 @@
+{
+    "name": "asyncsnippets",
+    "displayName": "async snippets pack",
+    "description": "Code snippets for async functions",
+    "version": "1.0.0",
+    "publisher": "frhtylcn",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ylcnfrht/vscode-async-snippet-pack"
+    },
+    "icon": "icon.png",
+    "engines": {
+        "vscode": "^1.28.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [{
+            "language": "javascript",
+            "path": "./snippets/snippets.json"
+        }]
+    }
+}
