@@ -1,12 +1,14 @@
 ## Async Snippet Pack for Visual Studio Code
 
-##### A snippet pack to make you more productive working with Async library.
+#### A snippet pack to make you more productive working with Async library.
 
-##### This extension ships a bunch of useful async code snippets for the JavaScript in Visual Studio Code.
 
-##### Here's the full list of all the snippets:
+![](async.gif)
 
-## Shortcuts / Commands
+
+#### Here's the full list of all the snippets:
+
+### Shortcuts / Commands
 
 | Command | Description |
 | --- | --- |
@@ -62,35 +64,15 @@ async.waterfall([
     callback(null, 'one', 'two');
   },
   function(arg1, arg2, callback) {
-    // arg1 now equals 'one' and arg2 now equals 'two'
     callback(null, 'three');
   },
   function(arg1, callback) {
-    // arg1 now equals 'three'
     callback(null, 'done');
   }
 ], function (err, result) {
   // result now equals 'done'
 });
-// Or, with named functions:
-async.waterfall([
-  myFirstFunction,
-  mySecondFunction,
-  myLastFunction,
-], function (err, result) {
-  // result now equals 'done'
-});
-function myFirstFunction(callback) {
-  callback(null, 'one', 'two');
-}
-function mySecondFunction(arg1, arg2, callback) {
-  // arg1 now equals 'one' and arg2 now equals 'two'
-  callback(null, 'three');
-}
-function myLastFunction(arg1, callback) {
-  // arg1 now equals 'three'
-  callback(null, 'done');
-}
+
 
 ```
 
@@ -99,9 +81,20 @@ function myLastFunction(arg1, callback) {
 
 Users appreciate release notes as you update your extension.
 
+
+## For more information
+
+https://caolan.github.io/async/
+
+
+
 ### 1.0.0
 
 Initial release of async snippets
+
+### 1.0.1
+
+Deleted unnecessary comment line and examples
 
 
 -----------------------------------------------------------------------------------------------------------

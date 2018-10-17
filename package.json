@@ -2,7 +2,7 @@
     "name": "asyncsnippets",
     "displayName": "async snippets pack",
     "description": "Code snippets for async functions",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "frhtylcn",
     "repository": {
         "type": "git",
@@ -18,7 +18,7 @@
     "contributes": {
         "snippets": [{
             "language": "javascript",
-            "path": "./snippets/snippets.json"
+            "path": "./snippets/async_snippets.json"
         }]
     }
 }
